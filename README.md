@@ -1,1 +1,1 @@
-# info-hive
+# Infohive
