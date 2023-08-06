@@ -1,4 +1,4 @@
-# InfoNest
+# Info-Nest
 
 ## Description
 Under development.
