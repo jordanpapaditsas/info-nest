@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Info-Nest</title>
   <link rel="stylesheet" href="css/style.css">
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 <body>
   <div class="container">
 
     <header>
       <div class="search">
-        <img id="search-img" src="" alt="">
+        <i class="fas fa-search"></i>
         <input id="search-bar" type="search">
       </div>
       <div class="welcome">
-        <img class="prof-img" src="" alt="">
-        <p class="welcome-p">Hi there, Jordan Papaditsas</p>
+        <img class="prof-img rounded" src="assets/avatar (1).png" alt="">
+        <p class="welcome-p">Hi there, JP</p>
       </div>
       <div class="profile">
-        <i class="bell"></i>
-        <img class="prof-img small" src="" alt="">
-        <span id="prof-name">Jordan Papaditsas</span>
+        <i class="fa-regular fa-bell"></i>
+        <img class="prof-img rounded" src="assets/avatar (2).png" alt="">
+        <span id="prof-name">JP</span>
       </div>
       <div class="header-btn">
         <button class="hdr-btn">New</button>
@@ -32,23 +32,26 @@
 
     <aside>
       <div class="logo">
-        <img id="logo-img" src="" alt="LOGO">
+       <img id="dash-logo" src="assets/dashboard-logo.png" alt="LOGO">
+       <p>Dashboard</p>
       </div>
       <nav>
-        <ul class="first-nav">
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
-        </ul>
-        <ul class="second-nav">
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
-        </ul> 
-      </nav>
+        <div class="side-nav">
+          <ul>
+            <li><a href="#"><span class="icon">🏠</span> Home</a></li>
+            <li><a href="#"><span class="icon">👤</span> Profile</a></li>
+            <li><a href="#"><span class="icon">💬</span> Messages</a></li>
+            <li><a href="#"><span class="icon">📜</span> History</a></li>
+            <li><a href="#"><span class="icon">✅</span> Tasks</a></li>
+            <li><a href="#"><span class="icon">🌐</span> Communities</a></li>
+          </ul>
+          <ul>
+            <li><a href="#"><span class="icon">⚙️</span> Settings</a></li>
+            <li><a href="#"><span class="icon">🛠️</span> Support</a></li>
+            <li><a href="#"><span class="icon">🔒</span> Privacy</a></li>
+          </ul>
+        </div>
+        </nav>
     </aside>
     
     <main>
@@ -103,20 +106,20 @@
       <div class="trending">
         <p>Trending</p>
         <div>
-          <img src="" alt="">
-          <p>A</p>
+          <img class="rounded" src="assets/trending-animals.png" alt="">
+          <p>Wild Animal Protectors</p>
         </div>
         <div>
-          <img src="" alt="">
-          <p>B</p>
+          <img class="rounded" src="assets/trending-skydiving.png" alt="">
+          <p>Skydiving Club</p>
         </div>
         <div>
-          <img src="" alt="">
-          <p>C</p>
+          <img class="rounded" src="assets/trending-travel.png" alt="">
+          <p>Travel Agency</p>
         </div>
         <div>
-          <img src="" alt="">
-          <p>D</p>
+          <img class="rounded" src="assets/trending-nba.png" alt="">
+          <p>NBA Stars</p>
         </div>
       </div>
     </main>
@@ -126,7 +129,7 @@
         <script>
           document.write(new Date().getFullYear());
         </script>
-        Jordan Papaditsas
+        JP
       </p>
     </footer>
 
