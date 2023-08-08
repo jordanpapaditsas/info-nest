@@ -33,6 +33,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   color: white;
+  align-items: center;
 }
 
 /* Sidebar */
@@ -73,14 +74,19 @@ nav {
 main {
   grid-area: main;
   background-color: rgb(221, 215, 215);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
 
+.projects {
+  display: flex;
+}
 
 /* Footer */
 footer {
   grid-area: footer;
   text-align: center;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(58, 53, 53);
+  color: white;
   padding: 0.5rem;
 }
-
