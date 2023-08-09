@@ -1,8 +1,8 @@
 # Info-Nest
 
-## Admin Dashboard with CSS Grid
+## Description
 
-This dashboard is designed to provide an efficient interface for managing various aspects of your application. It utilizes CSS Grid and HTML to create a responsive and visually appealing admin panel.  
+This admin dashboard is designed to provide an efficient interface for managing various aspects of your application. It utilizes CSS Grid and HTML to create a responsive and visually appealing admin panel.  
 
 ## Live Preview
 **https://jordanpapaditsas.github.io/info-nest/**
