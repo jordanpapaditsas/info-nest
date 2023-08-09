@@ -4,14 +4,31 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-       
+
 .rounded {
   border-radius: 2rem;
 }
 
-a {
+.prof-img {
+  border-radius: 50%;
+}
+
+aside a {
   text-decoration: none;
   color: white;
+}
+
+.url-link {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  align-items: center;
+}
+
+.url-link a {
+  text-decoration: none;
+  color: rgb(58, 53, 53);
+  font-size: 1.2rem;
 }
 
 .container {
@@ -83,7 +100,7 @@ a {
 
 .profile .name {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .buttons {
@@ -95,14 +112,14 @@ a {
 }
 
 .btn {
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.6rem;
   border-radius: 2rem;
   width: 6rem;
 }
 
 /* Sidebar */
-aside {
+.aside {
   grid-area: aside;
   background-color: rgb(61, 102, 177);
   color: white;
@@ -134,15 +151,116 @@ nav {
 }
 
 /* Main Content */
-main {
+.main {
   grid-area: main;
-  background-color: rgb(221, 215, 215);
+  padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  grid-template-areas:
+  "projects announcements"
+  "projects trending";
+}
+
+main h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgb(58, 53, 53);
+  list-style: none;
+}
+
+.card-text {
+  color: rgb(58, 53, 53);
+  padding: auto 1rem;
 }
 
 .projects {
+  grid-area: projects;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 2rem;
+}
+
+.projects .card {
+  border-left: 10px solid rgb(61, 102, 177);
   display: flex;
+  flex-direction: column;
+}
+
+.projects .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: rgb(58, 53, 53);
+}
+
+.announcements {
+  grid-area: announcements;
+}
+
+.announcement {
+  width: 13rem;
+}
+
+.announcement h5 {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.announcement p {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.trending {
+  grid-area: trending;
+}
+
+.trending .card {
+  padding: 1rem;
+}
+
+.prof-trend {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.prof-trend + .prof-trend {
+  margin-top: 0.3rem;
+}
+
+.prof-trend .picture {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.prof-trend .account {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+}
+
+.prof-trend .username {
+  font-weight: 500;
+  margin-bottom: 0.15rem;
 }
 
 /* Footer */
@@ -152,4 +270,112 @@ footer {
   background-color: rgb(58, 53, 53);
   color: white;
   padding: 0.5rem;
+}
+
+/* Hover Effects */
+input:focus {
+  outline: none;
+  border: 5px solid rgb(61, 102, 177);
+}
+
+.buttons button:hover {
+  background-color: rgb(58, 53, 53);
+  color: white;
+}
+
+.fa-regular:hover {
+  transform: scale(1.3);
+}
+
+.side-nav a {
+  cursor: default;
+}
+
+.side-nav a:hover {
+  color: rgb(58, 53, 53);
+}
+
+.url-link a:hover {
+  background-color: rgb(61, 102, 177);
+  color: rgb(240, 232, 232);
+  border-radius: 0.3rem;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .container {
+    grid-template-rows: auto 1fr auto; /* Header, Main, and Footer */
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+  }
+  .header {
+    grid-area: header;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #search-bar {
+    width: 13rem;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .main-content {
+    grid-area: main;
+    padding: 2rem; /* Adjust as needed */
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .aside {
+    grid-area: aside;
+  }
+
+  .side-nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+  }
+
+
+  .footer {
+    grid-area: footer;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "aside header"
+      "aside main"
+      "footer footer";
+  }
+  
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
