@@ -11,7 +11,7 @@ This admin dashboard is designed to provide an efficient interface for managing 
 
 - **Project Announcements:** Stay updated with the latest project announcements and news.
 - **Trending:** Explore trending topics and activities within the application.
-- **Profile Header:** Easily access your profile information and settings from the header.
+- **Profile Header:** Easily access your profile information, your messages and the settings from the header.
 - **Search Functionality:** Use the search input to quickly find the content you're looking for.
 - **Sidebar Navigation:** Navigate seamlessly through different sections using the sidebar menu.
 - **Sections:**
