@@ -9,49 +9,59 @@
 <body>
   <div class="container">
 
-    <header>
-      <div class="search">
-        <i class="fas fa-search"></i>
-        <input id="search-bar" type="search">
+    <header class="header">
+      <div class="top">
+        <div class="search">
+          <i class="fas fa-search"></i>
+          <input id="search-bar" type="search"> 
+        </div>
+        <div class="account">
+          <i class="fa-regular fa-bell"></i>
+          <img class="prof-img rounded" src="assets/avatar (2).png" alt="Prof-Image">
+          <p class="name">JP</p>
+        </div>
       </div>
-      <div class="welcome">
-        <img class="prof-img rounded" src="assets/avatar (1).png" alt="">
-        <p class="welcome-p">Hi there, JP</p>
-      </div>
-      <div class="profile">
-        <i class="fa-regular fa-bell"></i>
-        <img class="prof-img rounded" src="assets/avatar (2).png" alt="">
-        <span id="prof-name">JP</span>
-      </div>
-      <div class="header-btn">
-        <button class="hdr-btn">New</button>
-        <button class="hdr-btn">Upload</button>
-        <button class="hdr-btn">Share</button>
+
+      <div class="bottom">
+        <div class="profile">
+          <img class="prof-img rounded" src="assets/avatar (1).png" alt="Prof-Image">
+          <div class="profile-name">
+            <p class="welcome-p">Hi there,</p>
+            <p class="name">Jordan Papaditsas<span class="username">(@JP)</span></p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn">New</button>
+          <button class="btn">Upload</button>
+          <button class="btn">Share</button>
+        </div>
       </div>
     </header>
 
     <aside>
-      <div class="logo">
-       <img id="dash-logo" src="assets/dashboard-logo.png" alt="LOGO">
-       <p>Dashboard</p>
-      </div>
-      <nav>
-        <div class="side-nav">
-          <ul>
-            <li><a href="#"><span class="icon">🏠</span> Home</a></li>
-            <li><a href="#"><span class="icon">👤</span> Profile</a></li>
-            <li><a href="#"><span class="icon">💬</span> Messages</a></li>
-            <li><a href="#"><span class="icon">📜</span> History</a></li>
-            <li><a href="#"><span class="icon">✅</span> Tasks</a></li>
-            <li><a href="#"><span class="icon">🌐</span> Communities</a></li>
-          </ul>
-          <ul>
-            <li><a href="#"><span class="icon">⚙️</span> Settings</a></li>
-            <li><a href="#"><span class="icon">🛠️</span> Support</a></li>
-            <li><a href="#"><span class="icon">🔒</span> Privacy</a></li>
-          </ul>
+      <div class="aside-container">
+        <div class="logo">
+          <img id="dash-logo" src="assets/dashboard-logo.png" alt="LOGO">
+          <p>Dashboard</p>
         </div>
+        <nav>
+          <div class="side-nav">
+            <ul class="first-nav">
+              <li><a href="#"><span class="icon">🏠</span> Home</a></li>
+              <li><a href="#"><span class="icon">👤</span> Profile</a></li>
+              <li><a href="#"><span class="icon">💬</span> Messages</a></li>
+              <li><a href="#"><span class="icon">📜</span> History</a></li>
+              <li><a href="#"><span class="icon">✅</span> Tasks</a></li>
+              <li><a href="#"><span class="icon">🌐</span> Communities</a></li>
+            </ul>
+            <ul class="second-nav">
+              <li><a href="#"><span class="icon">⚙️</span> Settings</a></li>
+              <li><a href="#"><span class="icon">🛠️</span> Support</a></li>
+              <li><a href="#"><span class="icon">🔒</span> Privacy</a></li>
+            </ul>
+          </div>
         </nav>
+      </div>
     </aside>
     
     <main>
@@ -130,7 +140,7 @@
         <script>
           document.write(new Date().getFullYear());
         </script>
-        JP
+        Jordan Papaditsas
       </p>
     </footer>
 
