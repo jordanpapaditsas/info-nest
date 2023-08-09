@@ -301,9 +301,8 @@ input:focus {
 }
 
 .url-link a:hover {
-  background-color: rgb(61, 102, 177);
-  color: rgb(240, 232, 232);
-  border-radius: 0.3rem;
+  color: rgb(61, 102, 177);
+  transform: scale(1.1);
 }
 
 .menu-btn {
