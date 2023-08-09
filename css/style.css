@@ -151,7 +151,7 @@ nav {
 }
 
 /* Main Content */
-.main {
+.main-content {
   grid-area: main;
   padding: 2rem;
   display: grid;
@@ -321,38 +321,46 @@ input:focus {
   }
   .header {
     grid-area: header;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
   }
 
   .top {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 2rem;
   }
 
   #search-bar {
-    width: 13rem;
+    width: 9rem;
   }
 
   .bottom {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
   }
   .main-content {
     grid-area: main;
-    padding: 2rem; /* Adjust as needed */
+    padding: 0.8rem;
   }
 
   .projects {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 85%;
   }
 
   .aside {
     grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .side-nav {
@@ -361,6 +369,17 @@ input:focus {
     justify-content: space-around;
   }
 
+  .announcements, .trending {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 85%;
+  }
+
+  .btn {
+    font-size: 0.7rem;
+    width: 4.5rem;
+  }
 
   .footer {
     grid-area: footer;
