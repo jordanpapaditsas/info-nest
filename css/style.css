@@ -273,6 +273,11 @@ footer {
 }
 
 /* Hover Effects */
+#dash-logo:hover {
+  transition: 0.3s ease-in-out;
+  transform: rotate(360deg);
+}
+
 input:focus {
   outline: none;
   border: 5px solid rgb(61, 102, 177);
